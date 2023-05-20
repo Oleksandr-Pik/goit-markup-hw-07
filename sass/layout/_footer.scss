@@ -23,33 +23,46 @@
   margin-bottom: 10px;
 }
 
-.contacts-link-address,
-.contacts-link-phone,
+.contacts-link-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-light);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts-link-phone {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 .contacts-link-email {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link-address:hover,
-.contacts-link-address:focus,
-.contacts-link-phone:hover,
-.contacts-link-phone:focus,
-.contacts-link-email:hover,
-.contacts-link-email:focus {
-  color: var(--accent-color);
-}
-
-.contacts-link-address {
-  color: var(--text-color-light);
-}
-
-.contacts-link-phone,
-.contacts-link-email {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .join-now {
@@ -69,16 +82,16 @@
 .join-now .social-list-link {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .join-now .social-list-icon {
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-now .social-list-link:hover,
-.join-now .social-list-link:focus {
-  background-color: var(--accent-color);
 }
 
 .subscribe-form {
